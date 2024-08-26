@@ -42,18 +42,19 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+![Alt text](../op-img/file1.png)
 
 
 cat < file2
 ## OUTPUT
+![Alt text](../op-img/file2.png)
 
-![Alt text](img1.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+ ![Alt text](../op-img/cmp1.png)
 comm file1 file2
  ## OUTPUT
 
