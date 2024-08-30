@@ -58,6 +58,7 @@ cmp file1 file2
 diff file1 file2
 ## OUTPUT
 
+![alt text](op-img/diff.png)
 
 #Filters
 
@@ -81,17 +82,18 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![alt text](op-img/cut.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![alt text](op-img/cut_1.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![alt text](op-img/cut_2.png)
 
 cat < newfile 
 ```
