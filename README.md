@@ -108,39 +108,37 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![alt text](op-img/grep_hello.png)
 
 grep hello newfile 
 ## OUTPUT
 
-
-
+![alt text](op-img/grep_hello_1.png)
 
 grep -v hello newfile 
 ## OUTPUT
 
-
+![alt text](op-img/grep_-v.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
-
+![alt text](op-img/grep_-i.png)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
-
+![alt text](op-img/grep_-i_-c.png)
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+![alt text](op-img/grep-R_1.png)
 
 grep -w -n world newfile   
 ## OUTPUT
 
+![alt text](<op-img/grep -w -n.png>)
 
 cat < newfile 
 ```
