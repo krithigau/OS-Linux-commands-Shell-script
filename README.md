@@ -42,23 +42,22 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![alt text](op-img/file1.png)
+![alt text](/op-img/file1.png)
 
 cat < file2
 ## OUTPUT
 
-![alt text](op-img/file2.png)
+![alt text](/op-img/file2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
 
-![alt text](op-img/cmp1.png)
-
+![alt text](/op-img/cmp1.png)
+ 
 diff file1 file2
 ## OUTPUT
 
-![alt text](op-img/diff.png)
 
 #Filters
 
@@ -162,59 +161,62 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-
+![alt text](<op-img/egrep -w.png>)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![alt text](<op-img/egrep -w_1.png>)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
-
+![alt text](<op-img/egrep -w_2.png>)
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
+![alt text](op-img/egrep_3.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
+![alt text](op-img/egrep_4.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![alt text](op-img/egrep_5.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+![alt text](op-img/grep_6.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-
+![alt text](op-img/grep_7.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+![alt text](op-img/egrep_8.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
+![alt text](op-img/egrep_9.png)
 
 egrep l{2} newfile
 ## OUTPUT
 
-
+![alt text](op-img/egrep_10.png)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
+![alt text](op-img/egrep_11.png)
 
 cat > file23
 ```
@@ -229,31 +231,28 @@ cat > file23
 ^d
 ```
 
-
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+![alt text](<op-img/sed -n.png>)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![alt text](<op-img/sed -n_1.png>)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![alt text](<op-img/sed -e.png>)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![alt text](<op-img/sed -e.png>)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
-
 
 sed -n -e '1,5p' file23
 ## OUTPUT
