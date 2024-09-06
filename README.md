@@ -254,28 +254,29 @@ sed  -e '2s/Ram/Sita/' file23
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![alt text](op-img/sed_1.png)
+
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![alt text](op-img/sed_2.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
-
+![alt text](op-img/sed_3.png)
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![alt text](op-img/sed_4.png)
 
 seq 10 
 ## OUTPUT
 
+![alt text](op-img/seq.png)'4,6p'
 
-
-seq 10 | sed -n '4,6p'
+seq 10 | sed -n 
 ## OUTPUT
 
 
@@ -283,28 +284,29 @@ seq 10 | sed -n '4,6p'
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![alt text](op-img/seq_2.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![alt text](op-img/seq_3.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![alt text](op-img/seq_4.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![alt text](op-img/seq_5.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![alt text](<op-img/sed -n_2.png>)
 
 sed -n '2,4{s/$/*/;p}' file23
-
 
 #Sorting File content
 cat > file21
@@ -318,6 +320,7 @@ cat > file21
 sort file21
 ## OUTPUT
 
+![alt text](op-img/sort.png)
 
 cat > file22
 ```
@@ -329,13 +332,10 @@ cat > file22
 1004 | Sit |  7000 | Dev
 ``` 
 uniq file22
-## OUTPUT
-
-
 
 #Using tr command
-
 cat file23 | tr [:lower:] [:upper:]
+
  ## OUTPUT
 
 cat < urllist.txt
