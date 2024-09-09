@@ -58,6 +58,7 @@ cmp file1 file2
 diff file1 file2
 ## OUTPUT
 
+![alt text](op-img/diff.png)
 
 #Filters
 
@@ -279,7 +280,7 @@ seq 10
 seq 10 | sed -n 
 ## OUTPUT
 
-
+![alt text](<op-img/seq 10.png>)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
@@ -304,9 +305,13 @@ seq 10 | sed '2,9c hello'
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-![alt text](<op-img/sed -n_2.png>)
+![alt text](<op-img/sed -n '2,4_'.png>)
 
 sed -n '2,4{s/$/*/;p}' file23
+
+## OUTPUT
+
+![alt text](<op-img/sed -n_2.png>)
 
 #Sorting File content
 cat > file21
@@ -333,6 +338,10 @@ cat > file22
 ``` 
 uniq file22
 
+## OUTPUT
+
+![alt text](<op-img/uniq file22.png>)
+
 #Using tr command
 cat file23 | tr [:lower:] [:upper:]
 
@@ -354,17 +363,18 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-
+![alt text](<op-img/cat urllist.png>)
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-
+![alt text](<op-img/cat urllist.txt | tr.png>)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
+![alt text](<op-img/tar -cvf.png>)
 
 mkdir backupdir
  
@@ -373,18 +383,24 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![alt text](<op-img/tar -tvr .png>)
 
 tar -xvf backup.tar
 ## OUTPUT
+
+![alt text](<op-img/ta -xvf.png>)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
  
+![alt text](<op-img/ls .gz.png>)
+
 gunzip backup.tar.gz
 ## OUTPUT
 
+![alt text](<op-img/ls .gz.png>)
  
 # Shell Script
 ```
