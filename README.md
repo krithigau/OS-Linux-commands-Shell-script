@@ -1031,6 +1031,7 @@ fi
 ## OUTPUT
  ./funcex.sh 
  ./funcex.sh 1 2
+ 
 ![alt text](op-img/funcex.png)
  
 cat argshift.sh
@@ -1047,6 +1048,7 @@ $ chmod 777 argshift.sh
 $ ./argshift.sh 1 2 3
  
  ![alt text](op-img/argshift.png)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1064,6 +1066,7 @@ $ chmod 777 argshift.sh
 ## OUTPUT
 
 $ ./argshift.sh 1 2 3
+
 ![alt text](op-img/argshift1.png)
  
 cat argshift.sh
@@ -1080,6 +1083,7 @@ set +x
  ./argshift.sh 1 2 3
  
  ![alt text](op-img/argshift.sh.png)
+
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1109,7 +1113,9 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+
  ![alt text](op-img/awk.png)
+
 cat > palindrome.sh
 ```bash
 #num=545
